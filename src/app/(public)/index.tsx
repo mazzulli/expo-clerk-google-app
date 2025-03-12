@@ -43,15 +43,12 @@ export default function SignIn(){
                     // there are missing requirements, such as MFA
                     // Use the `signIn` or `signUp` returned from `startSSOFlow`
                     // to handle next steps
-                    setIsLoading(false)
-                    // 35:56 https://www.youtube.com/watch?v=XzuKLqJUR14
+                    setIsLoading(false)                                        
                 }
         } catch (error) {
             console.log("ERRO NA ENTRADA: ", JSON.stringify(error, null, 2))
         }
     }
-
-    
 
     return (
         <View style={styles.container}>
